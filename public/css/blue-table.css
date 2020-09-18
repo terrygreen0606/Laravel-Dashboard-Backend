@@ -1,0 +1,41 @@
+.blue-table {
+    clear: both;
+    border: 3px solid #1f497d;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-bottom: 5mm;
+    page-break-inside: auto;
+}
+
+.blue-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+.blue-table td {
+    border-left: 3px solid #1f497d;
+    border-bottom: 1px solid #1f497d;
+    border-top: 1px solid #1f497d;
+    padding: 1mm;
+    vertical-align: top;
+}
+
+.blue-table td p {
+    padding: 0;
+    margin: 0;
+}
+
+.blue-table td p + p {
+    padding-top: 2mm;
+}
+
+.blue-table td.header {
+    font-weight: bold;
+    vertical-align: middle;
+    width: 60mm;
+}
+
+.blue-table .spacer td {
+    background: #dbe5f1;
+}

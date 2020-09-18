@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+@page {
+    size: auto;
+    /*    size: A4 portrait;*/
+    margin: 0;
+}
+
+
+html {
+    /*	font-size: 12px;*/
+    /*    zoom: 0.68;*/
+    /*    zoom: 0.76;*/
+    /*    zoom: 0.77;*/
+
+    /*    height: 0;*/
+    /*    transform-origin: 0 0;*/
+    /*    -webkit-transform-origin: 0 0;*/
+    /*    transform: scale(0.76);*/
+    /*    -webkit-transform: scale(0.76);*/
+}
+
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.pageContent {
+    font-size: 18px;
+}
+
+.page {
+    margin: 0;
+    padding: 0 0.5cm;
+}
+
+.page + .page {
+    page-break-before: always;
+}
+
+.page + .page .page-header {
+    padding-top: 11px;
+}
+
+.page + .page .doc-title {
+    padding-top: 4mm;
+}
+
+.page .page-header {
+    margin: 0;
+    padding: 0;
+    padding-top: 7mm;
+}
+
+.page .page-header-sub {
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+h1.header {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-weight: bold;
+    border-bottom: 3px dashed black;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3mm;
+    text-transform: uppercase;
+}
+
+h2.header {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1mm;
+}
+
+.footer-content {
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.debug.footer-content {
+    background: teal;
+}
+
+.doc-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10mm;
+}
+
+.doc-content {
+    padding-left: 15mm;
+    padding-right: 15mm;
+}
+
+.doc-content.doc-content-wide {
+    padding-left: 7mm;
+    padding-right: 7mm;
+}
+
+.red-box {
+    border: 1px dashed red;
+    border-collapse: collapse;
+}
+
+.red-box td,
+.red-box th {
+    border: 1px dashed red;
+}
+
+
+.table-no-border,
+.table-no-border td {
+    border: 0px !important;
+}
+
+
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    font-size: 10px;
+}
+
+.table th {
+    vertical-align: top;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.table th span {
+    display: block;
+}
+
+.table td {
+    border: 1px solid black;
+    padding: 1mm;
+    vertical-align: middle;
+}
+
+.table.inline-header td {
+    font-weight: bold;
+}
+
+.table.inline-header td span {
+    font-weight: normal;
+    float: right;
+}
+
+.table.slim td {
+    padding: 0 1mm;
+}
+
+.letter-address {
+    display: block;
+    position: relative;
+    margin-bottom: 5mm;
+}
+
+.letter-address .line,
+.letter-signature .line {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.5;
+}
+
+.toc-table {
+    table-layout: fixed;
+    font-family: Franklin Gothic Book;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.toc-table tr :nth-child(2) {
+    font-family: Calibri;
+    text-align: left;
+}
+
+.toc-table tr td:first-child {
+    width: 4.5in;
+    min-width: 4.5in;
+    max-width: 4.5in;
+}
+
+.toc-table tr td {
+    padding-bottom: 5mm;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.toc-table tr td:first-child:after {
+    font-weight: normal;
+    font-size: 12px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+}
+
+.toc-table tr td:last-child {
+    padding-left: 5px;
+}
+
+
+.toc-table .sub-topic {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.toc-table .sub-topic td:first-child {
+    padding-left: 20px;
+}
+
+ul.debug {
+    list-style-type: disc !important;
+}
+
+ul.debug li {
+    float: left;
+    width: 50%;
+}
+
+ul.covered-vessel-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.covered-vessel-list li {
+    padding: 0px;
+    margin: 0px;
+
+    margin-bottom: 5px;
+    float: left;
+    width: 33%;
+}
+
+.williamson-signature {
+    height: 18mm;
+    width: 55mm;
+}
+
+.header-content {
+    position: relative;
+    margin-bottom: 10mm;
+}
+
+.debug.header-content {
+    background: red;
+}
+
+.header-content .d-logo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+}
+
+.header-content .header-title {
+    text-align: center;
+    /* Sharper Images */
+    padding-bottom: 2mm;
+}
+
+.debug.header-content .header-title .header-1 {
+    background: blue;
+}
+
+.debug.header-content .header-title .header-2 {
+    background: orange;
+}
+
+.header-content .s-logo {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 100%;
+}
+
+.header-content .header-1 {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.header-content .header-2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-content-2 .change-and-date {
+    font-family: Calibri;
+    text-align: right;
+    font-size: 9px;
+    margin: 0mm;
+}
+
+.header-content-2 .header-title {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 1mm solid #000;
+    padding-bottom: 1mm;
+}
+
+.header-content-2 .header-title-outer-wrap {
+    padding-bottom: 1mm;
+    border-bottom: 1mm solid #000;
+}
+
+.blue-table {
+    clear: both;
+    border: 3px solid #1f497d;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-bottom: 5mm;
+    page-break-inside: auto;
+}
+
+.blue-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+.blue-table td {
+    border-left: 3px solid #1f497d;
+    border-bottom: 1px solid #1f497d;
+    border-top: 1px solid #1f497d;
+    padding: 1mm;
+    vertical-align: top;
+}
+
+.blue-table td p {
+    padding: 0;
+    margin: 0;
+}
+
+.blue-table td p + p {
+    padding-top: 2mm;
+}
+
+.blue-table td.header {
+    font-weight: bold;
+    vertical-align: middle;
+    width: 60mm;
+}
+
+.blue-table .spacer td {
+    background: #dbe5f1;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.tester {
+    display: none;
+}
+
+.debug .tester {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 25%;
+    width: 1mm;
+    height: 100%;
+    background: green;
+}
+

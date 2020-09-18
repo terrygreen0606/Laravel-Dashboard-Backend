@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="<%= debug ? 'debug' : '' %>">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    <%- include('/resources/css/common-styles.css') %>
+    </style>
+</head>
+
+<body>
+    <%- include('/resources/partials/header-1.html') %>
+    <div class="pageContent">
+        <div class="page">
+            <div style="text-align:right; margin-top:10mm;"><%= formatDate(issueDate, 'MMMM D, YYYY'); %></div>
+
+            <div class="clearfix" style="margin-top:10mm;">
+                <div style="width:20mm;float:left;">To:</div>
+                <div style="float:left;">Qualified Individual<br/>NT VRP Plan Preparer</div>
+            </div>
+            <div class="clearfix" style="margin-top: 10mm;">
+                <div style="width:20mm;float:left;">Subject:</div>
+                <div style="float:left;">Provision Services Certification</div>
+            </div>
+
+            <div class="clearfix" style="margin-top:10mm;">
+                <p>In accordance with the requirements of the contract between Donjon-SMIT (DJS) and the Owner/Operator/Manager (Planholder) of the NT Vessel Response Plan (NT VRP), this letter is provided for inclusion in the NT VRP and to hold in your possession and/or on the vessel(s) to which the NT VRP applies, as you and/or the Planholder deem appropriate.</p>
+
+                <p>This letter certifies that DJS agrees to be listed in the NT VRP and further certifies that that DJS, upon notification of an incident requiring a salvage and/or firefighting response by the Planholder or his authorized representative, agrees to and is capable of providing, and intends to commit to providing, the services that are listed in 33 Code of Federal Regulations (CFR) 155.4030(a) through 155.4030(h) to the Planholder.  Further, these services will be provided to the best of DJS's capability, in accordance with the planning response timeframes listed in 33 CFR Table 155.4030(b), for all U.S. COTP Zones or for U.S. COTP Zones specifically identified in the NT VRP, as applicable.</p>
+            </div>
+
+            <div class="clearfix" style="float: right; margin-top:20mm; text-align: left;">
+                <div>By:</div>
+                <div><img style="height : 18mm;width : 55mm;" src="<%- path %>resources/images/Williamson-signature.png"></div>
+                <div>DONJON-SMIT, LLC</div>
+                <div>Timothy P. Williamson</div>
+                <div>Vice President</div>
+            </div>
+        </div>
+        <%- include('/resources/partials/debug.html') %>
+        <%- include('/resources/partials/footer-asa.html') %>
+    </div>
+</body>
+
+</html>

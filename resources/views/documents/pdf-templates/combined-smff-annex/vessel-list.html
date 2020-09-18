@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="<%= debug ? 'debug' : '' %>">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    <%- include('/resources/css/common-styles.css') %>
+    </style>
+</head>
+
+<body>
+    <%- include('/resources/partials/header-2.html') %>
+    <div class="pageContent">
+        <% locals.company && company.vessels && company.vessels.forEach(function(vessel) { %>
+            <% if (locals.tanker === undefined || locals.tanker === vessel.tanker) { %>
+                <div class="page">
+                    <div class="page-header">
+                        <h2 class="header">Vessel Specific Information</h2>
+                        <p class="pull-left">Vessel Name: <%- vessel.name %></p>
+                        <p class="pull-right">IMO Number: <%- vessel.imo %></p>
+                    </div>
+                    <%- include('/resources/partials/vessel-table.html', {
+                        vessel: vessel,
+                        tanker: locals.tanker
+                    }) %>
+                </div>
+            <% } %>
+        <% }); %>
+        <%- include('/resources/partials/debug.html') %>
+    </div>
+    <%- include('/resources/partials/footer-1.html', {
+        hideDate: true,
+        hidePage: true
+    }) %>
+</div>
+</body>
+
+</html>

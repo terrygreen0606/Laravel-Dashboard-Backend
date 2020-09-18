@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="<%= debug ? 'debug' : '' %>">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    <%- include('/resources/css/common-styles.css') %>
+    <%- include('/combined-smff-annex/index.css') %>
+    </style>
+</head>
+
+<body>
+    <%- include('/resources/partials/header-2.html') %>
+    <div id="pageHeader-1"></div>
+    <div class="pageContent">
+        <%- include('/combined-smff-annex/page-cover.html', {
+            title: 'Vessel Response Plan',
+            subtitle: 'Salvage and Marine Firefighting Annex'
+        }) %>
+       <%- include('/combined-smff-annex/page-toc.html', {
+            items: [{
+                title: 'Introduction',
+                index: 'SA-1',
+            }, {
+                title: 'Preamble',
+                index: 'SA-1',
+                subtopic: true
+            },{
+                title: 'General Information',
+                index: 'SA-2',
+            }, {
+                title: 'Geographic Specific Information',
+                index: 'SA-11'
+            }, {
+                title: 'Vessel Specific Information',
+                index: 'SA-12'
+            }, {
+                title: 'Pumps &amp; Tugs Tables',
+                index: 'SA-13',
+                subtopic: true
+            }, {
+                title: 'Vessel Information',
+                index: 'See Vessel',
+                subtopic: true
+            }],
+            addendums: [{
+                title: 'Letter Certifying Resource Provider Review and Acceptance of Vessel Pre-fire Plan'
+            }, {
+                title: 'Letter Certifying Resource Provider Provision of Services'
+            }, {
+                title: 'Contract with Funding Agreement'
+            }]
+        }) %>
+        <%- include('/combined-smff-annex/page-preamble.html') %>
+        <%- include('/combined-smff-annex/page-annex-general.html') %>
+        <%- include('/combined-smff-annex/page-annex-geographic.html') %>
+        <%- include('/combined-smff-annex/page-annex-vessel.html', {
+            tanker: locals.tanker
+        }) %>
+        <div class="page">
+            <%- include('/combined-smff-annex/page-pumps-tugs-table.html') %>
+        </div>
+        <%- include('/resources/partials/debug.html') %>
+    </div>
+
+    <%- include('/resources/partials/footer-1.html', {
+        page: 1,
+        hidePage: true,
+        hideDate: true
+    }) %>
+    <%- include('/resources/partials/footer-1.html', {
+        page: 2,
+        hidePage: true,
+        hideDate: true
+    }) %>
+    <%- include('/resources/partials/footer-1.html', {
+        hideDate: true,
+        pagePrefix: 'SA'
+    }) %>
+</div>
+</body>
+
+</html>

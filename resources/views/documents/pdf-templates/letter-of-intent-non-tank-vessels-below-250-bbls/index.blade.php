@@ -1,0 +1,1 @@
+@include('documents.pdf-templates.letter-of-intent-non-tank-vessels.index')

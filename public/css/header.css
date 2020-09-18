@@ -1,0 +1,70 @@
+.header-content {
+    position: relative;
+    margin-bottom: 10mm;
+}
+
+.debug.header-content {
+    background: red;
+}
+
+.header-content .d-logo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+}
+
+.header-content .header-title {
+    text-align: center;
+    /* Sharper Images */
+    padding-bottom: 2mm;
+}
+
+.debug.header-content .header-title .header-1 {
+    background: blue;
+}
+
+.debug.header-content .header-title .header-2 {
+    background: orange;
+}
+
+.header-content .s-logo {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 100%;
+}
+
+.header-content .header-1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.header-content .header-2 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-content-2 .change-and-date {
+    font-family: Calibri;
+    text-align: right;
+    font-size: 9px;
+    margin: 0mm;
+}
+
+.header-content-2 .header-title {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 1mm solid #000;
+    padding-bottom: 1mm;
+}
+
+.header-content-2 .header-title-outer-wrap {
+    padding-bottom: 1mm;
+    border-bottom: 1mm solid #000;
+}

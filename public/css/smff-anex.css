@@ -1,0 +1,141 @@
+.title-page-text {
+ 	text-align: center;
+	font-family: Franklin Gothic Book;
+	font-weight: bold;
+}
+
+.page h1 {
+	text-align: center;
+	font-family: Franklin Gothic Book;
+	font-weight: bold;
+	font-size: 18px;
+	/*page-break-before: always;*/
+}
+
+.page h2 {
+	text-align: left;
+	font-family: Franklin Gothic Book;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.page p, .page li {
+	font-family: Franklin Gothic Book;
+	font-size: 11.5px;
+	text-align: justify;
+	margin-bottom: 4mm;
+	margin-top: 4mm;
+}
+
+.page > ul {
+	list-style: lower-alpha;
+}
+
+.preamble {
+	background-color: #edf2f8;
+	width: 4.81in;
+	height: 3.17in;
+	display: table;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.preamble p {
+	text-align: center;
+	font-family: Cambria;
+	color: #364f6f;
+	font-style: italic;
+	font-size: 14px;
+	padding: 15px 25px;
+}
+
+.services-and-response-times {
+	font-size: 8px;
+	table-layout: fixed;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.services-and-response-times th {
+	border: 1px solid black;
+	text-align: center;
+	border-collapse: collapse;
+	font-weight: normal;
+}
+
+.services-and-response-times tr td:nth-child(2) {
+	padding: 0;
+	text-align: center;
+}
+
+.services-and-response-times tr td:nth-child(3) {
+	padding: 0;
+	text-align: center;
+}
+
+.services-and-response-times .category {
+	font-family: Helvetica;
+	font-size: 9px;
+}
+
+.services-and-response-times td:first-child {
+	padding-left: 10mm;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+
+.services-and-response-times tr td {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-collapse: collapse;
+}
+
+.services-and-response-times .category td {
+	padding-left: 5mm;
+}
+
+.services-and-response-times .top-category td {
+	padding-left: 5mm;
+	border-top: 1px solid black;
+	border-collapse: collapse;
+}
+
+.services-and-response-times .category-last-item td {
+	padding-bottom: 3mm;
+}
+
+.reference {
+	font-family: Calibri;
+	font-size: 9px;
+}
+
+.table-name {
+	/*margin-top: 4mm;*/
+	font-family: Calibri;
+	font-size: 10px;
+	text-align: center;
+}
+
+.figure-reference {
+	counter-increment: figures;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.figure-reference::after {
+	content: counter(figures);
+}
+
+.figure-title {
+	font-size: 11px;
+	font-style: italic;
+	text-align: left;
+	width: 85%;
+	margin: auto;
+}
+
+.vessel-info-toc {
+	font-family: Calibri;
+	font-size: 12px;
+}

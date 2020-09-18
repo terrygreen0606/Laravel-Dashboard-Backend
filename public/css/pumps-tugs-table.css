@@ -1,0 +1,67 @@
+.pumps-tugs-table {
+	font-family: Calibri;
+	font-size: 10px;
+}
+
+.pumps-tugs-table table {
+	/*table-layout: fixed;*/
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.pumps-tugs-table td, .pumps-tugs-table th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.pumps-tugs-table tr.divider {
+	height: 4mm;
+	background-color: #d9d9d9;
+}
+
+.tugs-table tr td.dwt {
+	width: 30mm;
+}
+
+.tugs-table tr td.dwt-category {
+	text-align: right;
+}
+
+.tugs-table td.tughp {
+	width: 12mm;
+}
+
+.pumps-table th {
+	font-weigh: bold;
+}
+
+.pumps-table tr td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.tugs-table tr td {
+	/*padding-top: 4px;*/
+	/*padding-bottom: 4px;*/
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.pumps-table tr td:first-child {
+	width: 15mm;
+	border-bottom: none;
+}
+
+.pumps-table tr td:nth-child(2) {
+	width: 25mm;
+	text-align: left;
+}
+
+.pumps-table td.double-border, .pumps-table th.double-border {
+	/*border-left : 4px double black;*/
+	border-right: 4px double black;
+}
